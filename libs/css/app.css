@@ -3636,12 +3636,12 @@ table ul {
   width: 166px;
   height: 55px;
   margin: 0 auto;
-  background: url("../img/biz-ex-logo.png") no-repeat;
+  background: url("../img/logoitp.png") no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* line 304, ../../sass/_export.scss */
   .biz-ex-logo-img {
-    background: url("../img/biz-ex-logo-2x.png") no-repeat;
+    background: url("../img/logoitp.png") no-repeat;
   }
 }
 
