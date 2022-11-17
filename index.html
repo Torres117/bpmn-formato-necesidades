@@ -2,6 +2,8 @@
 <html class="no-js" lang="en">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Publish Web</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -25,13 +27,22 @@
 ***************************************************************************** /
  -->
 
-    <div class="biz-ex-wrapper row"></div>
+    <div class="biz-ex-wrapper row">
+        <footer class="footer bg-light text-center fixed-bottom ">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(51, 101, 209, 0.274);">
+              © 2022 Copyright. Arturo Torres Arteaga
+            </div>
+            <!-- Copyright -->
+          </footer>
+    </div>
 
     <div class="alert-box biz-ex-supported">
         <p id="biz-ex-support"></p>
         <a href="http://www.google.com/intl/es-419/chrome/" title="Chrome" target="_blank"><span class="biz-ex-iconbrowser-chrome"></span></a>
         <a href="http://www.mozilla.org/en-US/firefox/new/" title="Firefox" target="_blank"><span class="biz-ex-iconbrowser-firefox"></span></a>
         <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" title="IE 9+" target="_blank"><span class="biz-ex-iconbrowser-ie"></span></a>
+        
     </div>
     <script type="text/javascript" src="./libs/js/app/app.ie8detect.js"></script>
 
@@ -180,7 +191,7 @@
 		<div class="biz-gradien-scroll"></div>
 	</section>
 	<div class="biz-ex-layout row">
-		<div class="large-3 columns biz-ex-navigation-left hide-for-small">
+		<div class="large-3 columns biz-ex-navigation-left ">
 			<div class="biz-ex-menu-toggle-container"></div>
 			<div class="biz-ex-navigation-list"></div>
 		</div>
@@ -982,9 +993,9 @@
     <div class="large-9 columns biz-ex-top-nav">
         <div class="large-7 columns biz-ex-navigation-data">
             <h1 class="biz-ex-title-process">
-                <a href="list/" class="biz-ex-navigate" title="${Bizagi.Util.getResource('home')}">${process}</a>
+                <a href="list/" class="biz-ex-navigate" title="Simulación de procesos">Simulación de procesos</a>
             </h1>
-            <h2 class="biz-ex-title-diagram" title="${name}">Formato de asesorías</h2>
+            <h2 class="biz-ex-title-diagram" title="Asesorías">Proceso de asesorías.</h2>
             {{if PublishWebAttributes.showPublishDate}}
             <p class="biz-ex-time"><time datetime="${publishDate}">${publishDate}</time></p>
             {{/if}}
@@ -1003,7 +1014,7 @@
                 </li>
                 {{if !Bizagi.AppModel.personalized}}
                 <li>
-                    <a href="http://www.itpachuca.edu.mx/index.php/" target="_blank" class="biz-ex-bizagi">Vistia el sitio oficial de ITP</a>
+                    <a href="http://www.itpachuca.edu.mx/index.php" target="_blank" class="biz-ex-bizagi">Visita la página oficial del Tecnológico de Pachuca</a>
                 </li>
                 {{/if}}
             </ul>
@@ -1492,7 +1503,7 @@
 </script>
 
 <div id="lessParser" class="biz-ex-hide"> 
-
+    
 /*******************************************************************************
     @theme: Export Process Viewer
     @version: 2.0.0
@@ -1789,6 +1800,6 @@ h1, h2, h3, h4, h5, h6,
 @import "theme-client.css";
 
 </div>
-	<div id="image-renderer" style="position: absolute; width: 100000px; opacity: 0;"></div>
+	
 	</body>
 </html>
